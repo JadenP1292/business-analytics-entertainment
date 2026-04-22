@@ -4,6 +4,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import streamlit as st
 import plotly.express as px
+import pandas as pd
 from utils.snowflake_conn import run_query
 
 st.set_page_config(page_title="Overview", page_icon="🏠", layout="wide")
@@ -25,8 +26,8 @@ latest = run_query("""
 start = run_query(f"""
     select ticker, close_price as start_price
     from fact_stock_prices
+    where trade_date >= dateadd(day, -{days}, current_date)
     qualify row_number() over (partition by ticker order by trade_date asc) = 1
-        and trade_date >= dateadd(day, -{days}, current_date)
 """)
 
 merged = latest.merge(start, on="ticker", how="left")
@@ -37,7 +38,7 @@ merged["return_pct"] = (
 # KPI tiles
 cols = st.columns(len(merged))
 for i, row in merged.iterrows():
-    delta = f"{row['return_pct']:+.1f}%" if not merged["return_pct"].isna().all() else "N/A"
+    delta = f"{row['return_pct']:+.1f}%" if not pd.isna(row['return_pct']) else "N/A"
     cols[i].metric(
         label=row["ticker"],
         value=f"${row['close_price']:.2f}",
@@ -68,10 +69,11 @@ fig.update_layout(template="plotly_dark", legend_title="Ticker")
 st.plotly_chart(fig, use_container_width=True)
 
 # Insight callout
-best = merged.loc[merged["return_pct"].idxmax()]
-worst = merged.loc[merged["return_pct"].idxmin()]
-st.info(
-    f"**Key Insight:** {best['ticker']} led the peer group with "
-    f"{best['return_pct']:+.1f}% over the period, "
-    f"while {worst['ticker']} lagged at {worst['return_pct']:+.1f}%."
-)
+if not merged["return_pct"].isna().all():
+    best = merged.loc[merged["return_pct"].idxmax()]
+    worst = merged.loc[merged["return_pct"].idxmin()]
+    st.info(
+        f"**Key Insight:** {best['ticker']} led the peer group with "
+        f"{best['return_pct']:+.1f}% over the period, "
+        f"while {worst['ticker']} lagged at {worst['return_pct']:+.1f}%."
+    )
