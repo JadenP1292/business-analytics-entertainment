@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: "Calendar date dimension, Jan 2025 – Dec 2026"
+    columns:
+      - name: date_key
+        tests: [not_null, unique]
+      - name: full_date
+        tests: [not_null]
+
+  - name: dim_company
+    description: "One row per tracked ticker with company metadata"
+    columns:
+      - name: company_key
+        tests: [not_null, unique]
+      - name: ticker
+        tests: [not_null, unique]
+
+  - name: fact_stock_prices
+    description: "Daily OHLCV prices per company"
+    columns:
+      - name: trade_date
+        tests: [not_null]
+      - name: ticker
+        tests: [not_null]
+      - name: company_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_company')
+              field: company_key
+
+  - name: fact_company_snapshot
+    description: "Fundamentals snapshot per extraction run per company"
+    columns:
+      - name: ticker
+        tests: [not_null]
+      - name: company_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_company')
+              field: company_key
