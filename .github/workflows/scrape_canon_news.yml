@@ -31,7 +31,7 @@ jobs:
           SNOWFLAKE_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
           SNOWFLAKE_DATABASE: ${{ secrets.SNOWFLAKE_DATABASE }}
           SNOWFLAKE_SCHEMA: RAW
-        run: python scripts/scrape_canon_news.py
+        run: python extract/scrape_canon_news.py
 
       - name: Commit new knowledge/raw files
         run: |

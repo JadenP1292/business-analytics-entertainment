@@ -32,4 +32,4 @@ jobs:
           SNOWFLAKE_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
           SNOWFLAKE_DATABASE: ${{ secrets.SNOWFLAKE_DATABASE }}
           SNOWFLAKE_SCHEMA: RAW
-        run: python scripts/extract_alpha_vantage.py
+        run: python extract/extract_alpha_vantage.py
