@@ -26,7 +26,7 @@ Portfolio project for ISBA 4715 (Analytics Engineering) demonstrating end-to-end
 │   ├── job-posting.pdf      # Target job posting
 │   └── proposal.md          # Project proposal
 ├── dbt/                     # dbt project (Milestone 01)
-├── scripts/                 # Python extraction scripts
+├── extract/                 # Python extraction scripts
 ├── streamlit/               # Dashboard app (Milestone 02)
 ├── knowledge/               # Knowledge base (Milestone 02)
 │   ├── raw/                 # Scraped source documents
@@ -48,10 +48,10 @@ Portfolio project for ISBA 4715 (Analytics Engineering) demonstrating end-to-end
 pip install -r requirements.txt
 
 # Run API extraction (Alpha Vantage → Snowflake RAW)
-python scripts/extract_alpha_vantage.py
+python extract/extract_alpha_vantage.py
 
 # Run web scrape (Canon News → Snowflake RAW + knowledge/raw/)
-python scripts/scrape_canon_news.py
+python extract/scrape_canon_news.py
 ```
 
 ## Milestone 01 Status
@@ -62,9 +62,9 @@ python scripts/scrape_canon_news.py
 - Star schema design (`docs/api-star-schema.md`) — Alpha Vantage stock data
 - `requirements.txt` with all dependencies
 - `.env.example` documenting all required secrets
-- Source 1: `scripts/extract_alpha_vantage.py` — Alpha Vantage API → Snowflake `RAW.STOCK_PRICES_DAILY` + `RAW.COMPANY_OVERVIEW`
+- Source 1: `extract/extract_alpha_vantage.py` — Alpha Vantage API → Snowflake `RAW.STOCK_PRICES_DAILY` + `RAW.COMPANY_OVERVIEW`
   - Tracks: Canon (CAJ), Sony (SONY), Nikon (NINOY), HP (HPQ), Xerox (XRX)
-- Source 2: `scripts/scrape_canon_news.py` — Canon USA Newsroom → Snowflake `RAW.CANON_NEWS` + `knowledge/raw/`
+- Source 2: `extract/scrape_canon_news.py` — Canon USA Newsroom → Snowflake `RAW.CANON_NEWS` + `knowledge/raw/`
 - GitHub Actions: `.github/workflows/extract_alpha_vantage.yml` (weekdays 21:00 UTC)
 - GitHub Actions: `.github/workflows/scrape_canon_news.yml` (daily 9:00 UTC)
 - Data pipeline diagram in `README.md` (Mermaid flowchart)
@@ -77,4 +77,4 @@ python scripts/scrape_canon_news.py
 - Verify GitHub Actions trigger via workflow_dispatch
 
 ### Next Recommended Action
-Get Alpha Vantage API key, populate `.env`, then run `python scripts/extract_alpha_vantage.py` locally to confirm end-to-end connectivity.
+Get Alpha Vantage API key, populate `.env`, then run `python extract/extract_alpha_vantage.py` locally to confirm end-to-end connectivity.
