@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: raw
+    database: BASKET_CRAFT
+    schema: RAW
+    tables:
+      - name: stock_prices_daily
+        columns:
+          - name: trade_date
+            tests: [not_null]
+          - name: ticker
+            tests: [not_null]
+          - name: close_price
+            tests: [not_null]
+      - name: company_overview
+        columns:
+          - name: ticker
+            tests: [not_null, unique]
+
+models:
+  - name: stg_stock_prices
+    description: "Cleaned daily stock prices per ticker"
+    columns:
+      - name: trade_date
+        tests: [not_null]
+      - name: ticker
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['SONY', 'NINOY', 'HPQ', 'XRX', 'KODK']
+      - name: close_price
+        tests: [not_null]
+
+  - name: stg_company_overview
+    description: "Cleaned company fundamentals snapshot"
+    columns:
+      - name: ticker
+        tests: [not_null, unique]
