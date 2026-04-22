@@ -214,3 +214,6 @@ __marimo__/
 
 # Streamlit secrets (local dev only, never commit)
 streamlit/.streamlit/secrets.toml
+
+# Implementation plan files (may contain credentials in shell commands)
+docs/superpowers/
