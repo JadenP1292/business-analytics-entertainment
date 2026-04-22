@@ -133,7 +133,7 @@ Deploy the app to [Streamlit Community Cloud](https://share.streamlit.io) and ad
 
 ## Live Dashboard
 
-URL: *(deploy to Streamlit Community Cloud and paste URL here)*
+URL: https://canon-competitive-intelligence.streamlit.app/
 
 ## Knowledge Base
 
