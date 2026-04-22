@@ -211,3 +211,6 @@ __marimo__/
 
 # Brainstorming session files
 .superpowers/
+
+# Streamlit secrets (local dev only, never commit)
+streamlit/.streamlit/secrets.toml
