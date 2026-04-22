@@ -1,0 +1,21 @@
+name: 'canon_competitive_intelligence'
+version: '1.0.0'
+config-version: 2
+
+profile: 'canon_competitive_intelligence'
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+analysis-paths: ["analyses"]
+snapshot-paths: ["snapshots"]
+
+models:
+  canon_competitive_intelligence:
+    staging:
+      +materialized: view
+      +schema: STAGING
+    mart:
+      +materialized: table
+      +schema: MART
