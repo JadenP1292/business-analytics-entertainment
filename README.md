@@ -121,7 +121,7 @@ erDiagram
 
 ## Dashboard Preview
 
-Deploy the app to [Streamlit Community Cloud](https://share.streamlit.io) and add a screenshot here.
+![Canon Competitive Intelligence Dashboard](docs/dashboard-screenshot.png)
 
 ## Key Insights
 
