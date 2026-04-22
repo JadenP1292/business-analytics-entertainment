@@ -78,3 +78,17 @@ python extract/scrape_canon_news.py
 
 ### Next Recommended Action
 Get Alpha Vantage API key, populate `.env`, then run `python extract/extract_alpha_vantage.py` locally to confirm end-to-end connectivity.
+
+## Knowledge Base Query Conventions
+
+When answering questions about Canon, its competitors, or the imaging industry:
+
+1. Read `knowledge/wiki/` pages first — these are synthesized summaries
+2. Fall back to `knowledge/raw/` files for source-level detail
+3. Cite sources by filename (e.g., `canon_ir_abc123.md`)
+4. Wiki pages take precedence over raw sources when they conflict
+
+Example questions this knowledge base can answer:
+- "What are Canon's main business segments?"
+- "How does Canon compete with Sony in cameras?"
+- "What is Canon's strategic direction according to IR sources?"
