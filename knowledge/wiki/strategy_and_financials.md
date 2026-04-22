@@ -1,6 +1,6 @@
 # Canon's Strategy and Financials
 
-*Synthesized from scraped sources in knowledge/raw/. Last updated: 2026-04-22.*
+*Synthesized from scraped sources in knowledge/raw/. Last updated: 2026-04-23. Sources span global.canon, usa.canon.com, redsharknews.com.*
 
 ## Overview
 
@@ -43,12 +43,16 @@ Canon's Tsuzuri Project continues to create high-resolution facsimiles of cultur
 
 ## Financial Highlights
 
-- **Fiscal Year:** January 1 – December 31. Annual Report for FY2025 published March 2026.
-- **IR Reporting:** Canon Global IR News tracks financial disclosures, executive appointments, and material notices. A notice of discontinuation of executive appointment notices was issued April 2026, indicating a governance process change.
+- **Global Revenue:** Approximately $29.5 billion (FY2025). Annual Report for FY2025 published April 8, 2026.
+- **Imaging Revenue (cameras):** ~¥1.05tn ($6.8B) in 2025, projected to grow to ¥1.34tn ($8.6B) by 2030 under Phase VII restructure plan — roughly 4% CAGR.
+- **High-Growth Segment:** Network cameras (internet-connected surveillance/security) expected to grow >10% annually.
+- **Fiscal Year:** January 1 – December 31. 
+- **IR Reporting:** Canon Global IR News tracks financial disclosures, executive appointments, and material notices.
 - **Stock Listing:** Tokyo Stock Exchange (primary); NYSE ADR ticker CAJ (tracked in this portfolio's pipeline).
-- **Patent Rank:** 7th in U.S. (2026), reflecting sustained R&D investment.
+- **Patent Rank:** 7th in U.S. (2026), top 10 for 42 consecutive years — reflecting sustained R&D investment.
+- **Key Risk:** "Additional US tariffs and geopolitical risks" cited by Canon management in FY2025/2026 guidance.
 
-*Note: Specific revenue and net income figures were not present in the scraped sources. Refer to Canon's published Annual Report (FY2025) at global.canon for full financial statements.*
+*Sources: usa_canon_annual_report_2025.md (usa.canon.com), redsharknews_camera_industry_outlook_2026.md (redsharknews.com)*
 
 ## Pricing Analytics Context
 
@@ -81,3 +85,8 @@ The following files from `knowledge/raw/` informed this page:
 - `canon_news_65bc4d6d04fb66bc.md` — Toner cartridge removal from Amazon EU (2H 2025)
 - `canon_news_16584c22fc0c396f.md` — 23rd consecutive year No. 1 ILC camera market share
 - `canon_news_2d255b3d4fd77828.md` — IDC MarketScape "Leader" in print security
+- `usa_canon_annual_report_2025.md` — $29.5B global revenue, FY2025 Annual Report published (usa.canon.com)
+- `usa_canon_highspeed_inkjet_leader_2025.md` — IDC MarketScape Leader: High-Speed Inkjet 2025, proprietary printhead platform (usa.canon.com)
+- `usa_canon_remanufacturing_sustainability_2026.md` — imageRUNNER ADVANCE DX C5800 RM Series, Canon Virginia Inc., 90%+ parts reuse (usa.canon.com)
+- `usa_canon_nab2026_cineservo_lens.md` — CINE-SERVO 40-1200mm $79,999 lens, Cinema EOS firmware suite (usa.canon.com)
+- `redsharknews_camera_industry_outlook_2026.md` — Phase VII plan; imaging $6.8B→$8.6B by 2030; tariff risks (redsharknews.com)

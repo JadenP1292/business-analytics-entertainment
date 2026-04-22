@@ -1,6 +1,6 @@
 # Canon's Competitive Landscape
 
-*Synthesized from scraped sources in knowledge/raw/. Last updated: 2026-04-22.*
+*Synthesized from scraped sources in knowledge/raw/. Last updated: 2026-04-23. Sources span global.canon, usa.canon.com, redsharknews.com, and petapixel.com.*
 
 ## Overview
 
@@ -11,16 +11,20 @@ Canon competes across multiple distinct product categories, facing different riv
 **Sony (SONY)**
 Sony is Canon's most direct rival in the camera market, competing aggressively with its Alpha series of mirrorless cameras. Sony is also the world's dominant image sensor manufacturer, supplying sensors to many camera brands including Nikon. Sony has invested heavily in full-frame mirrorless technology and computational photography. In contrast, Canon has maintained its position as the No. 1 seller of interchangeable-lens digital cameras globally for 23 consecutive years (as of 2026), underscoring its commercial strength despite Sony's sensor technology advantage.
 
+**2025 BCN Market Share Data (Japan — mirrorless cameras):** Sony led with 29.9% (down from 35.8% in 2024), Canon second with 27.4% (up from 26%), Nikon third at 15.1%. Canon is narrowing the gap with Sony rapidly. Sony's financial disclosures indicate stable but non-growing camera revenue with a maturing market; however, Sony's broad imaging ecosystem (smartphone sensors) insulates it from camera-specific downturns. (Sources: petapixel.com, redsharknews.com)
+
 **Nikon (NINOY)**
 Nikon is a long-standing rival in the camera market, competing with Canon in both DSLR and mirrorless segments. Nikon's Z-series mirrorless platform competes directly with Canon's EOS R system. Both companies have shifted manufacturing emphasis from DSLR to mirrorless as that segment grows. Nikon also competes with Canon in semiconductor lithography equipment, where Nikon produces ArF immersion scanners. Canon is pursuing differentiated lithography approaches, including its novel inkjet-based wafer planarization technology announced in January 2026.
+
+**Nikon Financial Warning Signs (2026):** Nikon reported losses of ~¥103.6bn ($668M) and cut forecasts across its business. The imaging business (nearly half of total Nikon revenue) is profitable but under margin pressure from intensifying competition, lower average selling prices, higher promotion costs, FX headwinds, and tariffs. Nikon trimmed camera and lens shipment forecasts, signaling slowing demand. Unlike Canon, Nikon is not well-diversified. (Source: redsharknews.com)
 
 ## Printing & Document Solutions — Direct Competitors
 
 **HP Inc. (HPQ)**
-HP is the world's largest printer manufacturer by unit volume and a major competitor to Canon in both consumer and business printing. HP competes across inkjet and laser printing, managed print services (MPS), and hardware-as-a-service models. Canon counters with its imageRUNNER and Satera product lines and has been recognized as a "Leader" in the IDC MarketScape for Worldwide Print Security Solutions and Services Hardcopy (2026). Canon's launch of multifunction device remanufacturing in the United States (announced March 2026) reflects a circular economy push that differentiates it from HP's typical hardware sales model.
+HP is the world's largest printer manufacturer by unit volume and a major competitor to Canon in both consumer and business printing. HP competes across inkjet and laser printing, managed print services (MPS), and hardware-as-a-service models. Canon counters with its imageRUNNER and imageFORCE product lines and has been recognized as a "Leader" in TWO IDC MarketScape reports simultaneously: Worldwide Print Security Solutions and Services (2025-2026) and Worldwide High-Speed Inkjet (2025). Canon's high-speed inkjet portfolio (varioPRINT iX, varioPRESS iV7, ProStream, ColorStream) competes directly with HP's PageWide and Indigo divisions in production print. Canon's launch of multifunction device remanufacturing in the United States (April 2026, Canon Virginia Inc.) reflects a circular economy push that differentiates it from HP's typical hardware sales model. (Sources: usa.canon.com)
 
 **Xerox (XRX)**
-Xerox is a legacy competitor in enterprise document management, high-volume printing, and managed document services. Xerox has undergone significant restructuring in recent years and has reduced its footprint, creating opportunities for Canon to win enterprise document management customers. Canon's print security leadership position (IDC MarketScape) is directly relevant to enterprise customers who previously relied on Xerox for document workflow solutions. Canon's AI-driven Smart Support Chat for office printer maintenance (announced February 2026) further strengthens its managed services capability against Xerox.
+Xerox is a legacy competitor in enterprise document management, high-volume printing, and managed document services. Xerox has undergone significant restructuring in recent years and has reduced its footprint, creating opportunities for Canon to win enterprise document management customers. As of early 2026, XRX market cap is approximately $0.24B — structurally distressed and likely to discount aggressively to retain enterprise contracts. Canon's print security leadership position (IDC MarketScape Leader, third inclusion) and imageRUNNER ADVANCE DX remanufactured line are directly relevant to enterprise customers evaluating Xerox alternatives. Canon's AI-driven Smart Support Chat for office printer maintenance further strengthens its managed services capability against Xerox. (Sources: usa.canon.com, stock data from Alpha Vantage pipeline)
 
 ## Medical Imaging
 
@@ -53,3 +57,9 @@ The following files from `knowledge/raw/` informed this page:
 - `canon_news_65bc4d6d04fb66bc.md` — Toner cartridge removal from Amazon EU platforms (IP enforcement / consumables protection)
 - `canon_news_d639f349717692cb.md` — "Theinksupply" cartridge removal from Lazada Singapore
 - `canon_news_ebb3a3cb89601471.md` — "Wenshiou" toner cartridge removal from JD.com China
+- `usa_canon_print_security_leader_2026.md` — Canon IDC MarketScape Leader: Worldwide Print Security 2025-2026 (usa.canon.com)
+- `usa_canon_highspeed_inkjet_leader_2025.md` — Canon IDC MarketScape Leader: Worldwide High-Speed Inkjet 2025 (usa.canon.com)
+- `usa_canon_remanufacturing_sustainability_2026.md` — imageRUNNER ADVANCE DX C5800 RM Series launch, Canon Virginia Inc. (usa.canon.com)
+- `usa_canon_nab2026_cineservo_lens.md` — CINE-SERVO 40-1200mm T5.0-10.8 lens launch at NAB 2026 (usa.canon.com)
+- `redsharknews_camera_industry_outlook_2026.md` — Canon/Sony/Nikon/Fujifilm financial comparison, Phase VII plan (redsharknews.com)
+- `petapixel_camera_market_share_winners_2025.md` — 2025 BCN Awards Japan market share by brand (petapixel.com)

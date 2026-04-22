@@ -36,6 +36,14 @@ Canon Competitive Intelligence — scraped sources and synthesized wiki pages.
 | `canon_news_ebb3a3cb89601471.md` | Canon Global News — "Wenshiou" Toner Cartridge Removal from JD.com China | 2026-03-31 |
 | `canon_news_ecf63b187cd36caa.md` | Canon Global News — CDP 2025 Climate A List Inclusion | 2026-01-13 |
 
+| `usa_canon_annual_report_2025.md` | Canon U.S.A. Newsroom — Annual Report 2025 Published, $29.5B revenue | 2026-04-08 |
+| `usa_canon_highspeed_inkjet_leader_2025.md` | Canon U.S.A. Newsroom — IDC MarketScape Leader: Worldwide High-Speed Inkjet 2025 | 2026-04-09 |
+| `usa_canon_print_security_leader_2026.md` | Canon U.S.A. Newsroom — IDC MarketScape Leader: Worldwide Print Security 2025-2026 | 2026-04-14 |
+| `usa_canon_nab2026_cineservo_lens.md` | Canon U.S.A. Newsroom — CINE-SERVO 40-1200mm Lens at NAB 2026 | 2026-04-15 |
+| `usa_canon_remanufacturing_sustainability_2026.md` | Canon U.S.A. Newsroom — imageRUNNER Remanufacturing Business Launch (Canon Virginia Inc.) | 2026-04-07 |
+| `redsharknews_camera_industry_outlook_2026.md` | RedShark News — Canon/Sony/Nikon/Fujifilm financial comparison; Phase VII plan | 2026-02-17 |
+| `petapixel_camera_market_share_winners_2025.md` | PetaPixel — 2025 BCN Awards: Japan camera market share by brand | 2026-01-19 |
+
 ## How to Query This Knowledge Base
 
 Open Claude Code in this repo and ask questions like:
